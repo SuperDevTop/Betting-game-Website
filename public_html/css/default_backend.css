@@ -1,0 +1,414 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #273038;
+    font-family: "Open Sans", Helvetica, "sans-serif";
+}
+
+a, a:active, a:visited {
+    color: #fff;
+}
+
+/*HEADER*/
+header{
+    display: block;
+    background-color: #2e3842;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+}
+    header span.icoMenu{
+        display: table;
+        width: 30px;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+    header span.icoMenu span{
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin-top: 4px;
+        background-color: #fff;
+        transition: 1s;
+    }
+    header span.icoMenu span:nth-child(1){ transform: translate(0px, 6px) rotate(45deg); }
+    header span.icoMenu span:nth-child(2){ opacity: 0 }
+    header span.icoMenu span:nth-child(3){ transform: translate(0px, -6px) rotate(-45deg); }
+    header span.icoMenu.oculto span:nth-child(1){ transform: translate(0px, 0px) rotate(0deg); }
+    header span.icoMenu.oculto span:nth-child(2){ opacity: 1 }
+    header span.icoMenu.oculto span:nth-child(3){ transform: translate(0px, 0px) rotate(0deg); }
+
+    header div.userMenu{
+        float: right;
+        color: #fff;
+        font-size: 0.9rem;
+        margin: -18px 10px 0 0;
+    }
+    header div.userMenu span.seta{
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 2px;
+        vertical-align: middle;
+        border-top: 4px dashed;
+        border-top: 4px solid\9;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+    header div.userMenu ul{
+        display: none;
+    }
+
+
+nav{
+    float: left;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.2);
+    display: block;
+    width: 200px;
+    height: 100vh;
+    transition: 1s;
+}
+nav.oculto{
+    width: 42px;
+}
+    nav h1{
+        width: 200px;
+        font-size: 1.1rem;
+        color: #FFF;
+        line-height: 40px;
+        margin: 0 10px;
+    }
+    h1 img{
+        display: block;
+        float: left;
+        width: 23px;
+        margin: 10px 12px 0 0;
+    }
+    nav h2{
+        width: 200px;
+        font-size: 0.9rem;
+        color: #fff;
+        background-color: rgb(46 56 66);
+        padding: 10px 0 10px 12px;
+    }
+    nav h2 i{
+        width: 20px;
+        text-align: center;
+        margin-right: 12px;
+    }
+    nav ul{
+        width: 200px;
+    }
+    nav ul li{
+        font-size: 1rem;
+        line-height: 30px;
+        padding-left: 12px;
+        margin: 10px 0;
+        color: #fff;
+    }
+    nav ul li i{
+        width: 20px;
+        text-align: center;
+        margin-right: 12px;
+    }
+
+section{
+    display: table;
+    padding: 0px 20px;
+    width: calc(100% - 42px);
+    transition:1s;
+}
+section.oculto{
+    display: table;
+    width: calc(100% - 200px);
+}
+
+section h1{
+    display: table;
+    padding-left: 20px;
+    margin: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+section span.breadcrumbs{
+    display: table;
+    padding-left: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+section div.box{
+    display: inline-block;
+    width: 260px;
+    height: 104px;
+    background-color: #ccc;
+    margin: 10px;
+    box-shadow: 0 0 10px 0px #000;
+    border-radius: 3px;
+}
+section div.box p{
+    font-size: 0.8rem;
+    padding: 10px;
+}
+section div.box p b{
+    display: block;
+    font-size: 2rem;
+}
+section div.box span{
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 0.7rem;
+    padding: 4px 10px;
+}
+
+header.listaParceiro{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 1px 6px 0 #000;
+}
+
+header.listaParceiro img{
+    width: 34px;
+    margin-bottom: -13px;
+    margin-right: 12px;
+}
+
+h2.subtitulo{
+    display: block;
+    padding: 20px 10px;
+    color: #FFF;
+}
+
+table.lista {
+    display: table;
+    width:100%;
+}
+table.lista tr {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    color: #FFF;
+    margin: 5px 0;
+    padding: 6px 10px;
+    background-color: #525960;
+    box-shadow: 0 1px 3px 0 #000;
+    border-radius: 3px;
+}
+table.lista tr th{
+    display:inline-block;
+}
+table.lista tr td{
+    display:inline-block;
+}
+
+table.lista tr th input.buscar{
+    display: inline-block;
+    width: calc(100% - 10px);
+    background-color: #ccc;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid #979b9f;
+    border-radius: 3px;
+}
+table.lista tr th input.buscarBt{
+    display: inline-block;
+    width: 26px;
+    margin: 10px 10px 10px -32px;
+    font-size: 1.2rem;
+}
+
+canvas.grafUser{
+    width: 100%;
+    max-width:600px;
+    height: 300px;
+    display: block;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+h2.userData{
+    background-color: #525960;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 20px 0px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+ul.userData{
+    background: #525960;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 600px;
+}
+ul.userData li{
+    font-size: 1rem;
+    color: #ccc;
+    margin: 10px 0;
+}
+ul.userData li span{
+    color: #fff;
+}
+ul.userData li a{
+    font-size: 0.8rem;
+    display: inline-block;
+    background-color: #ccc;
+    color: #000;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+ul.userData li a.btCan{
+	color: #FFF;
+    background-image:linear-gradient(0deg,#c75760,#c21416);
+}
+h2.extrato{
+    background-color: #ccc;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #273038;
+}
+
+ul.userExtrato{
+    background: #CCC;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 600px;
+}
+ul.userExtrato li{
+    font-size: 0.7rem;
+    width: 270px;
+    color: #666;
+    margin: 2px 0;
+    padding: 3px 0;
+    border-radius: 10px;
+}
+ul.userExtrato li.saldo{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000;
+    padding-left: 117px;
+    background-image: linear-gradient(90deg, transparent, #525960);
+}
+ul.userExtrato li.deposito{
+    background-image: linear-gradient(90deg, transparent, #9e9e9e);
+}
+ul.userExtrato li.ganho{
+    background-image: linear-gradient(90deg, transparent, #00bcd4);
+}
+ul.userExtrato li.perda{
+    background-image: linear-gradient(90deg, transparent, #ff5722);
+}
+ul.userExtrato li.total{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000;
+    padding-left: 117px;
+    background-image: linear-gradient(90deg, transparent, #525960);
+}
+ul.userExtrato li span{
+    color: #000;
+}
+
+
+ul.userExtrato li.extratoBox{
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 170px;
+    margin: 0 5px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 4px 0 #000;
+}
+
+ul.userExtrato li.extratoBox.dep{
+    background-image: linear-gradient(45deg, #525960, #9e9e9e 160%);
+}
+ul.userExtrato li.extratoBox.gan{
+    background-image: linear-gradient(45deg, #525960, #00bcd4 160%);
+}
+ul.userExtrato li.extratoBox.per{
+    background-image: linear-gradient(45deg, #525960, #ff5722 160%);
+}
+
+form.editUser{
+	display: none;
+    position: absolute;
+    background-color: #eee;
+    padding: 3px 6px;
+    border-radius: 3px;
+    box-shadow: 0 0 6px 0 #000;
+    margin-top: -29px;
+	color: #333;
+}
+
+form.editUser input{
+	background-color: #eee;
+    border-bottom: 1px solid #999;
+    font-size: 1rem;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+form.editUser input.btAlt{
+	color: #fff;
+    width: 60px;
+    background-image: linear-gradient(0deg,#283D71,#466DA5);
+    border-radius: 5px;
+    padding: 4px;
+    border: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+form.editUser a.btCan{
+	color: #fff;
+    width: 60px;
+    background-image: linear-gradient(0deg,#c75760,#c21416);
+    border-radius: 5px;
+    padding: 2px 4px;
+    border: 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+table.user_depositos{
+	display: block;
+    width: 100%;
+    max-width: 600px;
+    background-color: #CCC;
+    color: #ccc;
+    padding: 6px;
+    font-size: 0.8rem;
+}
+table.user_depositos tr td{
+	display: inline-block;
+    margin: 2px 1px;
+    padding: 3px 9px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+@media (max-width: 720px) {
+    
+}
+
+@media (max-width: 1080px) {
+    
+}
+
+@media (max-width: 1920px) {
+    
+}

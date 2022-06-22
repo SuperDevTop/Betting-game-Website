@@ -1,0 +1,26 @@
+@charset "utf-8";
+/*---- RESET ----*/
+* { margin:0; padding:0; border:0; outline:0; vertical-align:baseline; background:transparent; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
+html { overflow-y:scroll; }
+body { background:#FFF; font:62.5% sans-serif; }
+header,section,nav,article,aside,footer,details,figcaption,figure,hgroup { display:block; }
+ol,ul { list-style:none; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input,select { vertical-align:middle; }
+h1,h2,h3,h4,h5,h6 { font-weight:bold; }
+a { margin:0; padding:0; vertical-align:baseline; background:transparent; text-decoration:none; }
+a:hover,a:active { outline:none; }
+a,a:active,a:visited { color:#333; }
+a:hover { text-decoration:none; }
+nav ul,nav li { margin:0; }
+strong,th { font-weight:bold; }
+td,td img { vertical-align:top; }
+textarea { overflow:auto; }
+input[type="radio"] { vertical-align:text-bottom; }
+input[type="checkbox"] { vertical-align:bottom; }
+label,input[type="button"],input[type="submit"],input[type="image"],button { cursor:pointer; }
+button,input,select,textarea { margin:0; }
+::-moz-selection { background:#CCCCCC; color:#fff; text-shadow:none; }
+::selection { background:#CCCCCC; color:#fff; text-shadow:none; }
+button { width:auto; overflow:visible; }

@@ -1,0 +1,13 @@
+{
+    "/js/forgeapp.js": "/js/forgeapp.js",
+    "/js/app.js": "/js/app.js",
+    "/css/dynamic.css": "/css/dynamic.css",
+    "/css/app.css": "/css/app.css",
+    "/css/admin/app.css": "/css/admin/app.css",
+    "/js/signin.js": "/js/signin.js",
+    "/js/init.js": "/js/init.js",
+    "/js/forge.js": "/js/forge.js",
+    "/js/jquery-ui.min.js": "/js/jquery-ui.min.js",
+    "/plugins/sweetalert/sweetalert.css": "/plugins/sweetalert/sweetalert.css",
+    "/js/all.js": "/js/all.js"
+}

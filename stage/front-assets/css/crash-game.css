@@ -1,0 +1,184 @@
+
+.border-left-custom{
+	border-left: 1px solid rgb(50,50,50);
+}
+.border-history-label{
+	border-top: 1px solid rgb(50,50,50);
+	color: rgb(230,230,230);
+	font-weight: bold;
+}
+.game-container{
+	padding-top: 30px;
+}
+.card{
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	background-color: rgb(30,30,30);
+}
+.game-graph{
+	height: 400px;
+	width: 100%;
+	background-color: #303030;
+	margin-bottom: 10px;
+	position: relative;
+	background-image: url(../img/canva_bg.png);
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+.point-history{
+	padding: 5px 0px 10px 0px;
+	display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.point-history span{
+	padding: 5px 5px 5px 5px;
+	border-radius: 3px;
+	background-color: rgb(100,100,100);
+	color: rgb(230,230,230);
+	font-size: 13px;
+	margin-right: 5px;
+}
+.point-history .good_game{
+	background-color: #82b54b;
+}
+.point-history .blur
+{
+	position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(90deg,rgb(30,30,30) 10%,transparent);
+    left: 14px;
+}
+.option{
+	width: 100%;
+}
+.p-b-10{
+	padding-bottom: 10px;
+}
+.setting .button{
+	width: 100%;
+}
+.betting_type button{
+	background-color: rgb(50,50,50);
+	color: white;
+}
+.betting_type .active{
+	background-color: rgb(20,20,20) !important;
+	color: white;
+}
+.setting input{
+	background-color: rgb(20,20,20) !important;
+	border-color: rgb(50,50,50) !important;
+	color: white !important;
+	border-right: none;
+}
+.quantity span{
+	background-color: rgb(20,20,20) !important;
+	border-color: rgb(50,50,50) !important;
+	color: white;
+	border-left: none;
+}
+.total_auto span{
+	background-color: rgb(20,20,20) !important;
+	border-color: rgb(50,50,50) !important;
+	color: white;
+	border-left: none;
+}
+.quantity button{
+	background-color: rgb(20,20,20) !important;
+	border-color: rgb(50,50,50) !important;
+	color: rgb(240,240,240);
+}
+
+.game-graph .progress{
+	width: 80%;
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 10%;
+  	transform: translateX(0, -50%)
+}
+.progress span{
+	color: rgb(100,100,100);
+}
+.playing{
+	padding: 20px 10px 20px 10px;
+	background-color: grey;
+	color: white;
+	border-radius: 3px;
+  	position: absolute;
+  	width: 30%;
+  	left: 35%;
+  	top: 45%;
+  	transform: translateX(0, -50%);
+}
+.playing h3{
+	text-align: center;
+	margin-bottom: 0px;
+	color: white;
+}
+.end{
+	padding: 20px 10px 20px 10px;
+	background-color: #e04f1a;
+	color: white;
+	border-radius: 3px;
+  	position: absolute;
+  	width: 30%;
+  	left: 35%;
+  	top: 45%;
+  	transform: translateX(0, -50%);
+}
+.end h3{
+	text-align: center;
+	margin-bottom: 0px;
+	color: white;
+}
+.win{
+	padding: 10px 10px 10px 10px;
+	background-color: #82b54b;
+	color: white;
+	border-radius: 3px;
+  	position: absolute;
+  	width: 20%;
+  	left: 40%;
+  	top: 10%;
+  	transform: translateX(0, -50%);
+}
+.win h5{
+	text-align: center;
+	margin-bottom: 0px;
+	color: white;
+}
+canvas{
+    position: absolute;
+    z-index: 0;
+}
+.play_list{
+	padding: 20px 20px 20px 20px;
+	background-color: rgb(30,30,30);
+	margin-top: 20px;
+}
+.play_list table{
+	
+}
+.play_list table th{
+	background-color: rgb(40,40,40);
+	font-size: 15px;
+	color: white;
+}
+.play_list table td{
+	color: white;
+	font-size: 14px;
+}
+.play_list h5{
+	color: rgb(220,220,220);
+}
+.play_list h5 span{
+	font-weight: bold;
+	color: white;
+}
+.play_list h5 span:nth-child(2){
+	float: right !important;
+}

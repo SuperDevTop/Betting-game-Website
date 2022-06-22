@@ -1,0 +1,135 @@
+.chat-button{
+	position: fixed;
+	bottom: 16px;
+	right: 90px;
+} 
+#chat-button{
+	border-radius: 50%;
+	padding: 14px 13px 13px 13px;
+}
+.chat-button .new-msg-badge{
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #e04f1a;
+	margin-top: -10px;
+	margin-left: -3px;
+	position: fixed;
+}
+.right-chat{
+	top: 70px;
+    position: fixed;
+    height: 100%;
+    right: 0px;
+    width: 350px;
+    background: rgb(30,30,30);
+    border-left: 1px solid rgb(80,80,80);
+    z-index:1000000 !important;
+}
+.right-chat-content{
+    padding: 5px 10px 0px 15px;
+    height: 100%;
+}
+.chat-header{
+	padding: 10px 0px 15px 0px;
+	text-align: right;
+}
+.chat-header i{
+	font-size: 25px;
+	cursor: pointer;
+}
+.chat-header i:hover{
+	color: rgb(170,170,170) !important;
+}
+.chat-content{
+	height: calc(100% - 230px);
+	overflow: auto;
+	-ms-overflow-style: none;
+  	scrollbar-width: none;
+}
+.chat-content::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-content .msg{
+	margin-top: 10px;
+}
+.chat-content .msg .msg-content{
+	padding: 10px 15px 10px 15px;
+	border-radius: 5px;
+	color: rgb(230,230,230);
+    background-color: rgb(255,255,255,0.1);
+    font-size: 14px;
+    word-break: break-all;
+}
+.chat-content .msg .msg-content a{
+	font-weight: bold;
+	font-size: 16px;	
+	color: rgb(240,240,204);
+	margin-right: 10px;
+}
+.chat-content .msg .msg-time{
+	margin-top: 7px;
+	font-size: 11px;
+	color: rgb(220,220,220);
+}
+.chat-footer{
+	height: 60px;
+}
+.chat-footer .input-message{
+	width: calc(100% - 60px);
+}
+.chat-footer .input-message textarea{
+	height: 50px;
+	border: 1px solid rgb(100,100,100);
+	border-color: rgb(100,100,100) !important;
+	border-right: none;
+	background: transparent !important;
+	color: white;
+	resize: none;
+	overflow:hidden;
+}
+.chat-footer .input-message span{
+	background: transparent;
+	color: rgb(150,150,150);
+	border: 1px solid rgb(100,100,100);
+	border-left: none;
+	cursor: pointer;
+}
+.chat-footer .input-message span:hover{
+	color: rgb(170,170,170) !important;
+}
+.chat-footer .send-button button{
+	margin-left: 10px;
+	padding: 12px 14px 12px 14px;
+}
+.chat-footer .send-button i{
+	font-size: 20px;
+	color: white;
+}
+
+.chat-footer .emo-list{
+	display: flex;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    padding: 15px;
+    border-radius: 4px;
+    transform: translateY(-100%);
+    background: var(--background-three);
+    border: none;
+    box-shadow: 0 5px 20px 0 rgb(6 10 14 / 25%);
+    max-height: 100px;
+    z-index: 20;
+    background-color: rgb(100,100,100);
+}
+.chat-footer .emo-list .emoji{
+	cursor: pointer;
+}
+.chat-footer .emo-list .emoji:hover{
+	background-color: rgb(50,50,50) !important;
+}
+
+#open-emoti-list.active{
+	color: rgb(240,204,240);
+}

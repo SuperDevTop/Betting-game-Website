@@ -1,0 +1,61 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteRule ^comojogar\/?$ como_jogar.html [L]
+
+RewriteRule ^cadastro\/?$ /autenticacao/cadastro.php [L]
+RewriteRule ^cadastro\/sucesso?$ /autenticacao/cadastro.php?sucesso [L]
+RewriteRule ^cadastro\/erro?$ /autenticacao/cadastro.php?erro [L]
+
+RewriteRule ^login\/?$ /autenticacao/login.php [L]
+RewriteRule ^login\/erro?$ /autenticacao/login.php?erro [L]
+RewriteRule ^login\/erroativo?$ /autenticacao/login.php?erroativo [L]
+
+RewriteRule ^recsenha\/?$ /autenticacao/recsenha.php [L]
+RewriteRule ^recsenha\/ok?$ /autenticacao/recsenha.php?ok [L]
+RewriteRule ^recsenha\/erro?$ /autenticacao/recsenha.php?erro [L]
+
+RewriteRule ^ativar\/([0-9A-z_-]+)$ /autenticacao/ativar.php?id=$1 [QSA,L,NC]
+
+RewriteRule ^promo\/([0-9A-z_-]+)$ /autenticacao/promo.php?promo=$1 [QSA,L,NC]
+
+RewriteRule ^conta\/inativa?$ usuario_inativo.php [L]
+
+RewriteRule ^rocket\/?$ rocket.php [L]
+
+RewriteRule ^transacoes\/deposito\/?$ /transacoes/deposito.php [L]
+RewriteRule ^transacoes\/deposito\/([0-9A-z]+)$ /transacoes/deposito.php?ver=$1 [QSA,L,NC]
+
+RewriteRule ^transacoes\/validar\/?$ /transacoes/validar_documentos.php [L]
+
+RewriteRule ^transacoes\/saque\/?$ /transacoes/saque.php [L]
+RewriteRule ^transacoes\/saque\/afiliado?$ /transacoes/saque_afiliado.php [L]
+RewriteRule ^transacoes\/saque\/historico?$ /transacoes/saque_extrato.php [L]
+
+
+RewriteRule ^backend\/?$ /backend/back_end.php [L]
+
+RewriteRule ^backend\/saquesafiliados?$ /backend/back_end_saques_afiliados.php [L]
+RewriteRule ^backend\/saquesafiliados\/cancelar\/([0-9A-z]+)$ /backend/back_end_saques_afiliados.php?cancelar=$1 [QSA,L,NC]
+RewriteRule ^backend\/saquesafiliados\/pagar\/([0-9A-z]+)$ /backend/back_end_saques_afiliados.php?pagar=$1 [QSA,L,NC]
+RewriteRule ^backend\/saquesafiliados\/estornar\/([0-9A-z]+)$ /backend/back_end_saques_afiliados.php?estornar=$1 [QSA,L,NC]
+
+RewriteRule ^backend\/usuarios?$ /backend/back_end_usuarios.php [L]
+RewriteRule ^backend\/usuarios\/([0-9A-z_-]+)$ /backend/back_end_usuarios_ver.php?id=$1 [QSA,L,NC]
+
+RewriteRule ^backend\/depositos?$ /backend/back_end_depositos.php [L]
+
+RewriteRule ^backend\/saques?$ /backend/back_end_saques.php [L]
+RewriteRule ^backend\/saques\/cancelar\/([0-9A-z]+)$ /backend/back_end_saques.php?cancelar=$1 [QSA,L,NC]
+RewriteRule ^backend\/saques\/pagar\/([0-9A-z]+)$ /backend/back_end_saques.php?pagar=$1 [QSA,L,NC]
+RewriteRule ^backend\/saques\/estornar\/([0-9A-z]+)$ /backend/back_end_saques.php?estornar=$1 [QSA,L,NC]
+
+RewriteRule ^backend\/logadm?$ /backend/back_end_logadm.php [L]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
